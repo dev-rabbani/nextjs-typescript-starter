@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders course card correctly 1`] = `
+<div
+  class="relative overflow-hidden h-auto card shadow-one radius-one"
+  role="presentation"
+>
+  <a
+    class="block"
+    href="https://example.com/"
+  >
+    <div
+      class="group/card relative h-full bg-success/[.2]"
+    >
+      <div
+        class="overflow-hidden"
+      >
+        <img
+          alt="dummy image 2"
+          class="transition-transform ease-in-out group-hover/card:scale-110"
+          data-nimg="1"
+          decoding="async"
+          height="720"
+          loading="lazy"
+          src="http://localhost/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdktw59lc2%2Fimage%2Fupload%2Fv1669267967%2FBrightonSEO%2FCarousel%2Fimage-2_yph8q6.jpg&w=1920&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdktw59lc2%2Fimage%2Fupload%2Fv1669267967%2FBrightonSEO%2FCarousel%2Fimage-2_yph8q6.jpg&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdktw59lc2%2Fimage%2Fupload%2Fv1669267967%2FBrightonSEO%2FCarousel%2Fimage-2_yph8q6.jpg&w=1920&q=75 2x"
+          style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="960"
+        />
+      </div>
+      <div
+        class="flex flex-col space-y-3 p-5 pt-8"
+      >
+        <h3
+          class="flex-1 text-lg font-bold line-clamp-2"
+        >
+          Headless Website Development
+        </h3>
+      </div>
+    </div>
+  </a>
+</div>
+`;
