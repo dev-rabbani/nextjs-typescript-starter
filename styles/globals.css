@@ -5,6 +5,43 @@
 @layer base {
   :root {
     --transition: all 0.35s ease-in-out;
+
+    /* 
+     This implementation of colors allow us to control the color opacity
+     @see https://tailwindcss.com/docs/customizing-colors
+     @see https://tailwindcss.com/docs/text-color#changing-the-opacity
+     Please check the tailwind config if you modify this segment. 
+     */
+    --color-primary-darker: 0 82 73;
+    --color-primary-dark: 0 123 85;
+    --color-primary: 0 171 85;
+    --color-primary-light: 91 229 132;
+    --color-primary-lighter: 200 250 205;
+
+    --color-black: 51 51 51;
+    --color-black-light: 102 102 102;
+
+    --color-white: 255 255 255;
+
+    --color-gray: 189 189 189;
+    --color-gray-light: 221 221 221;
+    --color-gray-lighter: 250 250 250;
+
+    --color-info-dark: 0 108 156;
+    --color-info: 0 184 217;
+    --color-info-light: 97 243 243;
+
+    --color-success-dark: 27 128 106;
+    --color-success: 54 179 126;
+    --color-success-light: 134 232 171;
+
+    --color-warning-dark: 183 110 0;
+    --color-warning: 255 171 0;
+    --color-warning-light: 255 214 102;
+
+    --color-error-dark: 183 29 24;
+    --color-error: 255 86 48;
+    --color-error-light: 255 172 130;
   }
   h1,
   h2,

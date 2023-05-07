@@ -32,59 +32,102 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       primary: {
-        light: '#317AF5',
-        DEFAULT: '#0C5EE8',
-        medium: '#317AF5',
-      },
-      secondary: {
-        light: '#16B8E1',
-        DEFAULT: '#13A1C5',
-        medium: '#13B1C6',
-      },
-      success: {
-        light: '#6FD189',
-        DEFAULT: '#35B958',
-      },
-      danger: {
-        light: '#FA6B5F',
-        DEFAULT: '#EA4335',
-      },
-      warning: {
-        light: '#FCCB3C',
-        DEFAULT: '#FBBC05',
+        darker: 'rgb(var(--color-primary-darker) / <alpha-value>)',
+        dark: 'rgb(var(--color-primary-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-primary) / <alpha-value>)',
+        light: 'rgb(var(--color-primary-light) / <alpha-value>)',
+        lighter: 'rgb(var(--color-primary-lighter) / <alpha-value>)',
       },
       black: {
-        light: '#3D434F',
-        DEFAULT: '#000000',
-        medium: '#141D2E',
+        DEFAULT: 'rgb(var(--color-black) / <alpha-value>)',
+        light: 'rgb(var(--color-black-light) / <alpha-value>)',
       },
+      white: 'rgb(var(--color-white) / <alpha-value>)',
       gray: {
-        light: '#F8F9FA',
-        DEFAULT: '#EFF4FA',
-        medium: '#FBFBFB',
+        dark: 'rgb(var(--color-gray-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-gray) / <alpha-value>)',
+        light: 'rgb(var(--color-gray-light) / <alpha-value>)',
       },
-      white: '#FFFFFF',
+      info: {
+        dark: 'rgb(var(--color-info-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-info) / <alpha-value>)',
+        light: 'rgb(var(--color-info-light) / <alpha-value>)',
+      },
+      success: {
+        dark: 'rgb(var(--color-success-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-success) / <alpha-value>)',
+        light: 'rgb(var(--color-success-light) / <alpha-value>)',
+      },
+      warning: {
+        dark: 'rgb(var(--color-warning-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-warning) / <alpha-value>)',
+        light: 'rgb(var(--color-warning-light) / <alpha-value>)',
+      },
+      error: {
+        dark: 'rgb(var(--color-error-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-error) / <alpha-value>)',
+        light: 'rgb(var(--color-error-light) / <alpha-value>)',
+      },
     },
     backgroundImage: {
       'primary-gradient-1':
         'linear-gradient(86.52deg, #0C5EE8 0.21%, #317AF5 100.21%)',
-      'primary-gradient-2':
-        'linear-gradient(198.61deg, #0C5EE8 12.59%, #317AF5 87.41%)',
-      'secondary-gradient-1':
-        'linear-gradient(180deg, #13A1C5 0%, #16B8E1 100%)',
-      'secondary-gradient-2':
-        'linear-gradient(270deg, #16B8E1 0%, #13A1C5 100%)',
-      'link-gradient-1': 'linear-gradient(to right, #FBBC05, #FBBC05)',
     },
     fontSize: {
-      sm: ['0.875rem'],
-      base: ['1rem'],
-      lg: ['1.25rem'],
-      xl: ['1.5rem'],
-      '2xl': ['1.75rem'],
-      '3xl': ['2rem'],
-      '4xl': ['3rem'],
-      '5xl': ['5rem'],
+      xs: [
+        '0.75rem',
+        {
+          lineHeight: '1.5',
+        },
+      ],
+      sm: [
+        '0.875rem',
+        {
+          lineHeight: '1.57',
+        },
+      ],
+      base: [
+        '1rem',
+        {
+          lineHeight: '1.5',
+        },
+      ],
+      md: [
+        '1.125rem',
+        {
+          lineHeight: '1.55',
+        },
+      ],
+      lg: [
+        '1.25rem',
+        {
+          lineHeight: '1.5',
+        },
+      ],
+      xl: [
+        '1.5rem',
+        {
+          lineHeight: '1.5',
+        },
+      ],
+      '2xl': [
+        '2rem',
+        {
+          lineHeight: '1.5',
+        },
+      ],
+      '3xl': [
+        '3rem',
+        {
+          lineHeight: '1.33',
+        },
+      ],
+      '4xl': [
+        '4rem',
+        {
+          lineHeight: '1.25',
+        },
+      ],
     },
     boxShadow: {
       1: '0px 0px 16px 0px rgba(12, 94, 232, 0.1)',
@@ -149,8 +192,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };
