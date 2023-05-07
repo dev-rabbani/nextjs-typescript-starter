@@ -7,7 +7,7 @@ exports[`Given icon option: Airplane Expect button to have Airplane 1`] = `
 >
   <span
     aria-label="Button"
-    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-error-text-white lg"
   >
     <span>
       Button
@@ -49,7 +49,7 @@ exports[`Given icon option: Rocket Expect button to have Rocket 1`] = `
 >
   <span
     aria-label="Button"
-    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-error-text-white lg"
   >
     <span>
       Button
@@ -88,7 +88,7 @@ exports[`Given icon option: Train Expect button to have Train 1`] = `
 >
   <span
     aria-label="Button"
-    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-error-text-white lg"
   >
     <span>
       Button
@@ -130,7 +130,7 @@ exports[`renders button correctly 1`] = `
 >
   <span
     aria-label="Button"
-    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-error-text-white lg"
   >
     <span>
       Button
@@ -150,7 +150,7 @@ exports[`renders redirect button correctly 1`] = `
 >
   <span
     aria-label="Redirect Button"
-    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-error-text-white lg"
   >
     <span>
       Redirect Button
