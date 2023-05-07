@@ -41,13 +41,13 @@
   }
 
   // danger
-  &.bg-danger-text-white {
-    @apply bg-danger text-white;
+  &.bg-error-text-white {
+    @apply bg-error text-white;
   }
-  &.hover-bg-danger-text-white {
+  &.hover-bg-error-text-white {
     @apply hover:text-white;
     .button-bg {
-      @apply bg-danger;
+      @apply bg-error;
     }
   }
 
@@ -63,10 +63,10 @@
       @apply hover:border-primary hover:bg-transparent hover:text-primary;
     }
     &.bg-transparent-text-warning {
-      @apply border-secondary text-secondary;
+      @apply border-warning text-warning;
     }
     &.hover-bg-transparent-text-warning {
-      @apply hover:border-secondary hover:text-secondary hover:bg-transparent;
+      @apply hover:border-warning hover:bg-transparent hover:text-warning;
     }
     &.bg-transparent-text-warning {
       @apply border-error text-error;

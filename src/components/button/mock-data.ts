@@ -8,7 +8,7 @@ import {
 export const buttonProps: IFillButton = {
   label: 'Button',
   colorScheme: 'bg-primary-text-white',
-  hoverColorScheme: 'bg-success-text-white',
+  hoverColorScheme: 'bg-error-text-white',
   size: 'lg',
   clickHandler: () => {},
   variant: 'fill',
@@ -19,7 +19,7 @@ export const redirectButtonProps: IFillRedirectButton = {
   isOpenNewTab: true,
   label: 'Redirect Button',
   colorScheme: 'bg-primary-text-white',
-  hoverColorScheme: 'bg-success-text-white',
+  hoverColorScheme: 'bg-error-text-white',
   size: 'lg',
   variant: 'fill',
 };
