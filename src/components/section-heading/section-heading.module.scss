@@ -9,6 +9,11 @@
       @apply text-primary;
     }
   }
+  &.success {
+    .title {
+      @apply text-success;
+    }
+  }
   &.black {
     @apply text-black;
     .sub-title,
