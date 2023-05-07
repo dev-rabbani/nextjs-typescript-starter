@@ -25,7 +25,7 @@ const BaseButton = ({
   variant,
 }: IBaseButton) => {
   const btnClasses = clsx(
-    'relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.15]',
+    'relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1]',
     [Styles['button']],
     { [Styles['outline']]: variant === 'outline' },
     [Styles[colorScheme]],
@@ -44,7 +44,7 @@ const BaseButton = ({
     <span className={btnClasses} aria-label={label}>
       <span>{label}</span>
       {iconName !== undefined && (
-        <span className={Styles['button-icon']}>
+        <span className={clsx('leading-[1]', Styles['button-icon'])}>
           <IconStore iconName={iconName} />
         </span>
       )}
