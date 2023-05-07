@@ -16,14 +16,14 @@ exports[`renders hero correctly 1`] = `
         class="space-y-12"
       >
         <h2
-          class="text-3xl text-white md:text-4xl 2xl:text-5xl"
+          class="2xl:text-5xl text-3xl text-white md:text-4xl"
         >
-          Lemon Hive, We Build Lightning Fast Websites
+          Welcome to Nextjs typescript starter, the ultimate solution for building modern web applications with Next.js!
         </h2>
         <p
           class="text-xl text-white"
         >
-          We make secure, flexible and fast headless (Jamstack) websites and apps that improve Technical SEO, increase visitor numbers & conversion rates. We build with Sanity, BigCommerce, Prismic, Strapi, Contentful, WordPress, and other headless content management systems. We create front-ends with Vue, Svelte, Remix and React utilising Next.js, Gatsby, Nuxt, React Native, and others.
+          Our starter template is designed to give you a head start on your project, with all the tools you need to create a beautiful and responsive web application in no time. With Next.js, you can enjoy the benefits of server-side rendering and a streamlined development process, while still having the flexibility to use the front-end framework of your choice
         </p>
         <div
           class="inline-flex flex-wrap items-center gap-4"
@@ -35,7 +35,7 @@ exports[`renders hero correctly 1`] = `
           >
             <span
               aria-label="Server Side Example"
-              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.15] button bg-primary-text-white hover-bg-success-text-white sm"
+              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white sm"
             >
               <span>
                 Server Side Example
@@ -52,7 +52,7 @@ exports[`renders hero correctly 1`] = `
           >
             <span
               aria-label="Client Side Example"
-              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.15] button secondary-bg-text-white hover-primary-bg-text-white sm"
+              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-warning-text-black hover-bg-error-text-white sm"
             >
               <span>
                 Client Side Example
