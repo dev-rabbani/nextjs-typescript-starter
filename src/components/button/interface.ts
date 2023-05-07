@@ -41,17 +41,15 @@ export type IBaseButton =
   | Omit<IFillButton, 'clickHandler'>;
 
 export const buttonColorSchemes = [
-  'primary-bg-text-white',
-  'secondary-bg-text-white',
-  'black-bg-text-white',
-  'white-bg-text-black',
+  'bg-primary-text-white',
+  'bg-success-text-white',
+  'bg-warning-text-black',
+  'bg-error-text-white',
 ] as const;
 type ColorScheme = (typeof buttonColorSchemes)[number];
 
 export const outlineButtonColorSchemes = [
-  'transparent-bg-text-primary',
-  'transparent-bg-text-secondary',
-  'transparent-bg-text-white',
-  'transparent-bg-text-black',
+  'bg-transparent-text-primary',
+  'bg-transparent-text-warning',
 ] as const;
 type OutlineButtonColorScheme = (typeof outlineButtonColorSchemes)[number];

@@ -9,11 +9,6 @@
       @apply text-primary;
     }
   }
-  &.secondary {
-    .title {
-      @apply text-secondary;
-    }
-  }
   &.black {
     @apply text-black;
     .sub-title,

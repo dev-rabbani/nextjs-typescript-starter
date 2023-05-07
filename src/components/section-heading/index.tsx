@@ -2,19 +2,6 @@ import clsx from 'clsx';
 import { ISectionHeading } from './interface';
 import Styles from './section-heading.module.scss';
 
-const subtitleClasses = clsx(
-  'block text-[1.125rem] font-medium leading-[1.5] md:text-[1.5rem]  md:leading-[1.2]',
-  [Styles['sub-title']]
-);
-const titleClasses = clsx(
-  'text-[1.75rem] font-medium leading-[1.3] md:text-[3rem] md:font-bold md:leading-[1.1]',
-  [Styles['title']]
-);
-const descriptionClasses = clsx(
-  'text-[.875rem] leading-[1.3] md:text-base mt-3 lg:mt-5',
-  [Styles['description']]
-);
-
 /**
  * @param {object} ISectionHeading
  * @returns JSX.Element
@@ -37,9 +24,34 @@ export default function SectionHeading({
 
   return (
     <div role="presentation" className={sectionHeadingClasses}>
-      {subtitle && <span className={subtitleClasses}>{subtitle}</span>}
-      <h2 className={titleClasses}>{title}</h2>
-      {description && <p className={descriptionClasses}>{description}</p>}
+      {subtitle && (
+        <span
+          className={clsx(
+            'block text-[1.125rem] font-medium leading-[1.5] md:text-[1.5rem]  md:leading-[1.2]',
+            [Styles['sub-title']]
+          )}
+        >
+          {subtitle}
+        </span>
+      )}
+      <h2
+        className={clsx(
+          'text-[1.75rem] font-medium leading-[1.3] md:text-[3rem] md:font-bold md:leading-[1.1]',
+          [Styles['title']]
+        )}
+      >
+        {title}
+      </h2>
+      {description && (
+        <p
+          className={clsx(
+            'mt-3 text-[.875rem] leading-[1.3] md:text-base lg:mt-5',
+            [Styles['description']]
+          )}
+        >
+          {description}
+        </p>
+      )}
     </div>
   );
 }

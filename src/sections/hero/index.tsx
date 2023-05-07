@@ -16,7 +16,7 @@ export default function Hero({
       <Container>
         <div className="max-w-[1200px]">
           <div className="space-y-12">
-            <h2 className="text-3xl text-white md:text-4xl 2xl:text-5xl">
+            <h2 className="2xl:text-5xl text-3xl text-white md:text-4xl">
               {title}
             </h2>
             <p className="text-xl text-white">{description}</p>
@@ -30,8 +30,8 @@ export default function Hero({
               />
               <Button.Redirect
                 {...redirectButtonProps}
-                colorScheme="secondary-bg-text-white"
-                hoverColorScheme="primary-bg-text-white"
+                colorScheme="bg-warning-text-black"
+                hoverColorScheme="bg-error-text-white"
                 label={buttonRight.label}
                 href={buttonRight.href}
                 isOpenNewTab={false}

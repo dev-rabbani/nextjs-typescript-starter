@@ -1,6 +1,6 @@
 export const sectionHeadingColorschemes = [
   'primary',
-  'secondary',
+  'success',
   'black',
 ] as const;
 type Colorscheme = (typeof sectionHeadingColorschemes)[number];
