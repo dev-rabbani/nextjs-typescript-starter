@@ -16,7 +16,6 @@ const meta: Meta<typeof Component> = {
       options: [undefined, ...ctaButtonColorSchemes],
     },
   },
-
   decorators: [
     (Story) => (
       <div className="section-padding-primary">
@@ -30,6 +29,6 @@ const meta: Meta<typeof Component> = {
 
 export default meta;
 
-export const CtaPrimary: StoryObj<typeof Component> = {
+export const Primary: StoryObj<typeof Component> = {
   args: { ...ctaButtonProps },
 };

@@ -1,8 +1,8 @@
 import { ICtaButton } from './interface';
 
 export const ctaButtonProps: ICtaButton = {
-  label: 'Cta button',
-  href: 'https://example.com/',
+  label: 'Call to action',
+  href: '/',
   colorScheme: 'primary',
   isOpenNewTab: false,
 };

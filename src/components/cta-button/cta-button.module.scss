@@ -1,14 +1,79 @@
 .cta-button {
+  --transition-duration: 0.4s;
+  transition-duration: var(--transition-duration);
+
+  &::after,
+  &::before {
+    content: '';
+    @apply absolute bottom-0 left-0 h-[2px] w-full;
+  }
+
+  // normal
+  &::after {
+    @apply z-1;
+  }
+
+  // The width of the ::before pseudo-element will change on hover.
+  &::before {
+    @apply z-[2] origin-left;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all var(--transition-duration) ease-in-out;
+  }
+
+  &[class*='hover-'] {
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  // primary
   &.primary {
     @apply text-primary;
+    &::after {
+      @apply bg-primary;
+    }
   }
   &.hover-primary {
     @apply hover:text-primary;
+    &:hover {
+      &::before {
+        @apply bg-primary;
+      }
+    }
   }
-  &.secondary {
-    @apply text-secondary;
+
+  // error
+  &.error {
+    @apply text-error;
+    &::after {
+      @apply bg-error;
+    }
   }
-  &.hover-secondary {
-    @apply hover:text-secondary;
+  &.hover-error {
+    @apply hover:text-error;
+    &:hover {
+      &::before {
+        @apply bg-error;
+      }
+    }
+  }
+
+  // black
+  &.black {
+    @apply text-black;
+    &::after {
+      @apply bg-black;
+    }
+  }
+  &.hover-black {
+    @apply hover:text-black;
+    &:hover {
+      &::before {
+        @apply bg-black;
+      }
+    }
   }
 }

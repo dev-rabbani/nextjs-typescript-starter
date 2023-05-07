@@ -11,7 +11,7 @@ export default function CtaButton({
   hoverColorScheme,
 }: ICtaButton) {
   const btnClasses = clsx(
-    'relative z-10 overflow-hidden inline-flex items-center justify-center underline transition-colors',
+    'relative z-10 no-underline font-semibold text-base leading-[1.1]',
     [Styles['cta-button']],
     [Styles[colorScheme]],
     { [Styles[`hover-${hoverColorScheme}`]]: hoverColorScheme }
