@@ -41,13 +41,13 @@
   }
 
   // danger
-  &.bg-error-text-white {
-    @apply bg-error text-white;
+  &.bg-danger-text-white {
+    @apply bg-danger text-white;
   }
-  &.hover-bg-error-text-white {
+  &.hover-bg-danger-text-white {
     @apply hover:text-white;
     .button-bg {
-      @apply bg-error;
+      @apply bg-danger;
     }
   }
 
@@ -69,24 +69,24 @@
       @apply hover:border-warning hover:bg-transparent hover:text-warning;
     }
     &.bg-transparent-text-warning {
-      @apply border-error text-error;
+      @apply border-warning text-warning;
     }
     &.hover-bg-transparent-text-warning {
-      @apply hover:border-error hover:bg-transparent hover:text-error;
+      @apply hover:border-warning hover:bg-transparent hover:text-warning;
     }
   }
 
   //  Button Sizes
   &.lg {
-    @apply text-base/[1.1] min-h-[3rem]  rounded-md p-[.75rem_1.5rem] font-normal md:min-h-[3.5rem] md:p-[.875rem_2rem]  md:font-medium;
+    @apply min-h-[3rem] rounded-md  p-[.75rem_1.5rem] text-base/[1.1] font-normal md:min-h-[3.5rem] md:p-[.875rem_2rem]  md:font-medium;
   }
   &.md {
-    @apply text-sm/[1.1] md:text-base/[1.1]  min-h-[2.5rem] rounded-md p-[.75rem_1rem] font-normal md:min-h-[3rem] md:p-[.875rem_2rem];
+    @apply min-h-[2.5rem] rounded-md  p-[.75rem_1rem] text-sm/[1.1] font-normal md:min-h-[3rem] md:p-[.875rem_2rem] md:text-base/[1.1];
   }
   &.sm {
-    @apply text-base/[1.1] min-h-[3rem] rounded-[.3125rem] p-[.75rem_1.5rem] font-normal;
+    @apply min-h-[3rem] rounded-[.3125rem] p-[.75rem_1.5rem] text-base/[1.1] font-normal;
   }
   &.xs {
-    @apply text-sm/[1.1] min-h-[2.5rem] gap-2 rounded-[.3125rem]  p-[.75rem_1rem] font-normal;
+    @apply min-h-[2.5rem] gap-2 rounded-[.3125rem] p-[.75rem_1rem]  text-sm/[1.1] font-normal;
   }
 }

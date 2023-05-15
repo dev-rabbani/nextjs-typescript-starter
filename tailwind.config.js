@@ -63,10 +63,10 @@ module.exports = {
         DEFAULT: 'rgb(var(--color-warning) / <alpha-value>)',
         light: 'rgb(var(--color-warning-light) / <alpha-value>)',
       },
-      error: {
-        dark: 'rgb(var(--color-error-dark) / <alpha-value>)',
-        DEFAULT: 'rgb(var(--color-error) / <alpha-value>)',
-        light: 'rgb(var(--color-error-light) / <alpha-value>)',
+      danger: {
+        dark: 'rgb(var(--color-danger-dark) / <alpha-value>)',
+        DEFAULT: 'rgb(var(--color-danger) / <alpha-value>)',
+        light: 'rgb(var(--color-danger-light) / <alpha-value>)',
       },
     },
     backgroundImage: {

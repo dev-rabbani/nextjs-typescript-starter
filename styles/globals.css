@@ -39,9 +39,9 @@
     --color-warning: 255 171 0;
     --color-warning-light: 255 214 102;
 
-    --color-error-dark: 183 29 24;
-    --color-error: 255 86 48;
-    --color-error-light: 255 172 130;
+    --color-danger-dark: 183 29 24;
+    --color-danger: 255 86 48;
+    --color-danger-light: 255 172 130;
   }
   h1,
   h2,

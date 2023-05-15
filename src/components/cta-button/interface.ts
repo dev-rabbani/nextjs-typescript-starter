@@ -6,5 +6,5 @@ export interface ICtaButton {
   hoverColorScheme?: ColorScheme;
 }
 
-export const ctaButtonColorSchemes = ['primary', 'error', 'black'] as const;
+export const ctaButtonColorSchemes = ['primary', 'danger', 'black'] as const;
 type ColorScheme = (typeof ctaButtonColorSchemes)[number];

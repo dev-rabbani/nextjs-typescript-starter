@@ -44,7 +44,7 @@ export const buttonColorSchemes = [
   'bg-primary-text-white',
   'bg-success-text-white',
   'bg-warning-text-black',
-  'bg-error-text-white',
+  'bg-danger-text-white',
 ] as const;
 type ColorScheme = (typeof buttonColorSchemes)[number];
 
