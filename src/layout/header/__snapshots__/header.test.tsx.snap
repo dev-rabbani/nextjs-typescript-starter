@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Header correctly 1`] = `
+<header
+  class="bg-black"
+  role="presentation"
+>
+  <div
+    class="container"
+    role="presentation"
+  >
+    <div
+      class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+    >
+      <h1
+        class="text-4xl text-white"
+      >
+        <a
+          href="/"
+        >
+          Starter
+        </a>
+      </h1>
+      <nav>
+        <ul
+          class="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-12"
+        >
+          <li>
+            <a
+              class="inline-flex items-end py-[38px] text-base font-bold text-white transition hover:text-primary"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-end py-[38px] text-base font-bold text-white transition hover:text-primary"
+              href="/"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-end py-[38px] text-base font-bold text-white transition hover:text-primary"
+              href="/"
+            >
+              Service
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex items-end py-[38px] text-base font-bold text-white transition hover:text-primary"
+              href="/"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+`;

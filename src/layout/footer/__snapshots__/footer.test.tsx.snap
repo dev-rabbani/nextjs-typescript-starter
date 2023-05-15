@@ -12,7 +12,7 @@ exports[`render footer correctly 1`] = `
     <p
       class="text-center text-base text-white"
     >
-      © Lemon Hive. 
+      © Nextjs typescript starter. 
       2023
     </p>
   </div>

@@ -1,7 +1,7 @@
 import { IHeader } from './interface';
 
 export const headerProps: IHeader = {
-  logo: 'Lemon Hive',
+  logo: 'Starter',
   menuItems: [
     {
       label: 'Home',

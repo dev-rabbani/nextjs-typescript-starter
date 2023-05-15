@@ -46,17 +46,17 @@
   }
 
   // error
-  &.error {
-    @apply text-error;
+  &.danger {
+    @apply text-danger;
     &::after {
-      @apply bg-error;
+      @apply bg-danger;
     }
   }
-  &.hover-error {
-    @apply hover:text-error;
+  &.hover-danger {
+    @apply hover:text-danger;
     &:hover {
       &::before {
-        @apply bg-error;
+        @apply bg-danger;
       }
     }
   }
