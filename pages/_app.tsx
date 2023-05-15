@@ -1,8 +1,9 @@
 import type { AppProps } from 'next/app';
-import { primary, secondary } from 'fonts';
+import { primary, secondary } from '../fonts';
 import 'styles/globals.css';
 import ViewportProvider from 'src/contexts/viewport';
 import IsDomReadyProvider from 'src/contexts/dom-ready';
+import clsx from 'clsx';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,7 +11,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ViewportProvider>
         {/* Make font variables avaiable to all pages. */}
         <div
-          className={`${primary.variable} ${secondary.variable} font-primary`}
+          className={clsx(
+            primary.variable,
+            secondary.variable,
+            'bg-white',
+            'font-primary'
+          )}
         >
           <Component {...pageProps} />
         </div>

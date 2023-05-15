@@ -1,4 +1,4 @@
-import { Dimension, ImageProps } from '@root/src/types';
+import { Dimension, ImageProps } from 'src/types';
 
 export interface BlogCardProps {
   slug: string;

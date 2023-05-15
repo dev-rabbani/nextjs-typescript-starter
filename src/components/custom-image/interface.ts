@@ -1,4 +1,4 @@
-import { Dimension } from '@root/src/types';
+import { Dimension } from 'src/types';
 
 export interface CustomFillImageProps {
   src: string;

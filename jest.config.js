@@ -17,7 +17,6 @@ const customJestConfig = {
     '@sections/(.*)': '<rootDir>/src/sections/$1',
     '@hooks/(.*)': '<rootDir>/src/hooks/$1',
     '@themes/(.*)': '<rootDir>/src/themes/$1',
-    '@root/(.*)': '<rootDir>/$1',
   },
   testEnvironment: 'jest-environment-jsdom',
   testMatch: ['**/src/**/*.test.[jt]sx'],

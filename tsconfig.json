@@ -21,8 +21,7 @@
       "@components/*": ["./src/components/*"],
       "@sections/*": ["./src/sections/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@themes/*": ["./src/themes/*"],
-      "@root/*": ["./*"]
+      "@themes/*": ["./src/themes/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

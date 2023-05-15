@@ -4,9 +4,11 @@
 import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
 
 import '../styles/globals.css';
-import { primary, secondary } from '@root/fonts';
+import { primary, secondary } from '../fonts';
 import ViewportProvider from 'src/contexts/viewport';
 import IsDomReadyProvider from 'src/contexts/dom-ready';
+import clsx from 'clsx';
+
 export const parameters = {
   controls: {
     matchers: {
@@ -40,7 +42,12 @@ export const decorators = [
       <IsDomReadyProvider>
         <ViewportProvider>
           <div
-            className={`${primary.variable} ${secondary.variable} bg-white font-primary`}
+            className={clsx(
+              primary.variable,
+              secondary.variable,
+              'bg-white',
+              'font-primary'
+            )}
           >
             <Story />
           </div>

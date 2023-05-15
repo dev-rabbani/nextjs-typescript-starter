@@ -6,13 +6,9 @@ import React, {
   useState,
 } from 'react';
 import { getWindow } from 'ssr-window';
-import {
-  Breakpoint,
-  BREAKPOINTS,
-  CONTAINERS,
-} from '@root/src/themes/interface';
+import { Breakpoint, BREAKPOINTS, CONTAINERS } from 'src/themes/interface';
 import { IProviderProps } from '../types/interface';
-import { CONTAINER_DEFAULT_PADDING } from '@root/src/themes/interface';
+import { CONTAINER_DEFAULT_PADDING } from 'src/themes/interface';
 
 type OffsetType = number | string;
 
