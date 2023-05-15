@@ -35,7 +35,7 @@ exports[`renders hero correctly 1`] = `
           >
             <span
               aria-label="Server Side Example"
-              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-error-text-white sm"
+              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-danger-text-white sm"
             >
               <span>
                 Server Side Example
@@ -52,7 +52,7 @@ exports[`renders hero correctly 1`] = `
           >
             <span
               aria-label="Client Side Example"
-              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-warning-text-black hover-bg-error-text-white sm"
+              class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-warning-text-black hover-bg-danger-text-white sm"
             >
               <span>
                 Client Side Example
