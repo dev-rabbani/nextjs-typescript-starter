@@ -1,30 +1,30 @@
 import {
-  IFillButton,
-  IFillRedirectButton,
-  IOutlineButton,
-  IOutlineRedirectButton,
+  FillButtonProps,
+  FillRedirectButtonProps,
+  OutlineButtonProps,
+  OutlineRedirectButtonProps,
 } from './interface';
 
-export const buttonProps: IFillButton = {
+export const buttonProps: FillButtonProps = {
   label: 'Button',
   colorScheme: 'bg-primary-text-white',
-  hoverColorScheme: 'bg-error-text-white',
+  hoverColorScheme: 'bg-danger-text-white',
   size: 'lg',
   clickHandler: () => {},
   variant: 'fill',
 };
 
-export const redirectButtonProps: IFillRedirectButton = {
+export const redirectButtonProps: FillRedirectButtonProps = {
   href: 'https://www.google.com/',
   isOpenNewTab: true,
   label: 'Redirect Button',
   colorScheme: 'bg-primary-text-white',
-  hoverColorScheme: 'bg-error-text-white',
+  hoverColorScheme: 'bg-danger-text-white',
   size: 'lg',
   variant: 'fill',
 };
 
-export const outlineButtonProps: IOutlineButton = {
+export const outlineButtonProps: OutlineButtonProps = {
   label: 'Outline Button',
   colorScheme: 'bg-transparent-text-primary',
   hoverColorScheme: 'bg-transparent-text-warning',
@@ -33,7 +33,7 @@ export const outlineButtonProps: IOutlineButton = {
   variant: 'outline',
 };
 
-export const redirectOutlineButtonProps: IOutlineRedirectButton = {
+export const redirectOutlineButtonProps: OutlineRedirectButtonProps = {
   href: 'https://www.google.com/',
   isOpenNewTab: true,
   label: 'Outline Redirect Button',

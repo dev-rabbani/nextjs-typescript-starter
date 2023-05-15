@@ -1,6 +1,6 @@
-import { ICtaButton } from './interface';
+import { CtaButtonProps } from './interface';
 
-export const ctaButtonProps: ICtaButton = {
+export const ctaButtonProps: CtaButtonProps = {
   label: 'Call to action',
   href: '/',
   colorScheme: 'primary',

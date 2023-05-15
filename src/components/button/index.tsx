@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import clsx from 'clsx';
 import {
-  IBaseButton,
-  IFillButton,
-  IFillRedirectButton,
-  IOutlineButton,
-  IOutlineRedirectButton,
+  BaseButtonProps,
+  FillButtonProps,
+  FillRedirectButtonProps,
+  OutlineButtonProps,
+  OutlineRedirectButtonProps,
 } from './interface';
 import IconStore from '@components/icons';
 import Styles from './button.module.scss';
@@ -23,7 +23,7 @@ const BaseButton = ({
   iconIsLeft,
   isDisabled,
   variant,
-}: IBaseButton) => {
+}: BaseButtonProps) => {
   const btnClasses = clsx(
     'relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1]',
     [Styles['button']],
@@ -53,7 +53,7 @@ const BaseButton = ({
   );
 };
 
-const Button = (props: IFillButton | IOutlineButton) => {
+const Button = (props: FillButtonProps | OutlineButtonProps) => {
   const btnWrapperWithNotAllowedClass = clsx(btnWrapperClasses, {
     'cursor-not-allowed': props.isDisabled,
   });
@@ -72,7 +72,9 @@ const Button = (props: IFillButton | IOutlineButton) => {
   );
 };
 
-Button.Redirect = (props: IFillRedirectButton | IOutlineRedirectButton) => {
+Button.Redirect = (
+  props: FillRedirectButtonProps | OutlineRedirectButtonProps
+) => {
   return (
     <Link
       href={props.href}

@@ -1,13 +1,13 @@
-interface IButton {
+interface Button {
   label: string;
   href: string;
 }
 
-export interface IHero {
+export interface HeroProps {
   title: string;
   description: string;
   buttons: {
-    buttonLeft: IButton;
-    buttonRight: IButton;
+    buttonLeft: Button;
+    buttonRight: Button;
   };
 }

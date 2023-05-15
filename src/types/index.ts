@@ -13,9 +13,9 @@ export interface Dimension {
   height: number;
 }
 
-export type IImage = Omit<CustomImageProps, 'width' | 'height'>;
+export type ImageProps = Omit<CustomImageProps, 'width' | 'height'>;
 
-export interface ILink {
+export interface LinkProps {
   href: string;
   label: string;
   isOpenNewTab: boolean;

@@ -1,12 +1,12 @@
 import clsx from 'clsx';
-import { IContainer } from './interface';
+import { ContainerProps } from './interface';
 import Styles from './container.module.css';
 
 export default function Container({
   children,
   isFluid = false,
   isNoPadding = false,
-}: IContainer) {
+}: ContainerProps) {
   const containerClasses = clsx(
     [Styles['container']],
     { [Styles['full-width']]: isFluid },

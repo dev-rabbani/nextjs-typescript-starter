@@ -1,8 +1,8 @@
 import clsx from 'clsx';
-import { ICardWrapper } from './interface';
+import { CardWrapperProps } from './interface';
 import Styles from './card-wrapper.module.scss';
 
-interface IProps extends ICardWrapper {
+interface IProps extends CardWrapperProps {
   children: JSX.Element;
 }
 

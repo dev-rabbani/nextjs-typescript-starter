@@ -10,7 +10,7 @@ import {
   buttonSizes,
   outlineButtonColorSchemes,
 } from './interface';
-import { icons } from '@components/icons/interface';
+import { iconNames } from '@components/icons/interface';
 
 it('renders button correctly', () => {
   const { getByRole } = render(<Button {...buttonProps} />);
@@ -72,7 +72,7 @@ describe.each(buttonSizes)('Given button size: %s', (size) => {
   });
 });
 
-describe.each(icons)('Given icon option: %s', (iconName) => {
+describe.each(iconNames)('Given icon option: %s', (iconName) => {
   it(`Expect button to have ${iconName}`, () => {
     const props = { ...buttonProps, iconName: iconName };
     const { getByRole } = render(<Button {...props} />);

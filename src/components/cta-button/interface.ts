@@ -1,4 +1,4 @@
-export interface ICtaButton {
+export interface CtaButtonProps {
   href: string;
   label: string;
   isOpenNewTab: boolean;

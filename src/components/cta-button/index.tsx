@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ICtaButton } from './interface';
+import { CtaButtonProps } from './interface';
 import Styles from './cta-button.module.scss';
 import clsx from 'clsx';
 
@@ -9,7 +9,7 @@ export default function CtaButton({
   colorScheme,
   isOpenNewTab,
   hoverColorScheme,
-}: ICtaButton) {
+}: CtaButtonProps) {
   const btnClasses = clsx(
     'relative z-10 no-underline font-semibold text-base leading-[1.1]',
     [Styles['cta-button']],

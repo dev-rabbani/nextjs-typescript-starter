@@ -1,11 +1,9 @@
-interface IMenuItem {
+interface MenuItem {
   label: string;
   href: string;
 }
 
 export interface IHeader {
   logo: string;
-  menuItems: IMenuItem[];
+  menuItems: MenuItem[];
 }
-
-export type ThemeValues = 'dark' | 'light' | undefined;

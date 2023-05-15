@@ -4,7 +4,7 @@ import { IconNames } from 'src/components/icons/interface';
 export const buttonSizes = ['lg', 'md', 'sm', 'xs'] as const;
 type Size = (typeof buttonSizes)[number];
 
-export interface IFillButton {
+export interface FillButtonProps {
   label: string;
   colorScheme: ColorScheme;
   size: Size;
@@ -18,27 +18,31 @@ export interface IFillButton {
   variant: 'fill';
 }
 
-export interface IFillRedirectButton extends Omit<IFillButton, 'clickHandler'> {
+export interface FillRedirectButtonProps
+  extends Omit<FillButtonProps, 'clickHandler'> {
   href: string;
   isOpenNewTab: boolean;
 }
 
-export interface IOutlineButton
-  extends Omit<IFillButton, 'colorScheme' | 'hoverColorScheme' | 'variant'> {
+export interface OutlineButtonProps
+  extends Omit<
+    FillButtonProps,
+    'colorScheme' | 'hoverColorScheme' | 'variant'
+  > {
   colorScheme: OutlineButtonColorScheme;
   hoverColorScheme: OutlineButtonColorScheme;
   variant: 'outline';
 }
 
-export interface IOutlineRedirectButton
-  extends Omit<IOutlineButton, 'clickHandler'> {
+export interface OutlineRedirectButtonProps
+  extends Omit<OutlineButtonProps, 'clickHandler'> {
   href: string;
   isOpenNewTab: boolean;
 }
 
-export type IBaseButton =
-  | Omit<IOutlineButton, 'clickHandler'>
-  | Omit<IFillButton, 'clickHandler'>;
+export type BaseButtonProps =
+  | Omit<OutlineButtonProps, 'clickHandler'>
+  | Omit<FillButtonProps, 'clickHandler'>;
 
 export const buttonColorSchemes = [
   'bg-primary-text-white',

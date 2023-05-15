@@ -1,6 +1,6 @@
-import { IHero } from './interface';
+import { HeroProps } from './interface';
 
-export const heroProps: IHero = {
+export const heroProps: HeroProps = {
   title:
     'Welcome to Nextjs typescript starter, the ultimate solution for building modern web applications with Next.js!',
   description:

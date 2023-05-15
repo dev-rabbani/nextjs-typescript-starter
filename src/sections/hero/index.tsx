@@ -1,5 +1,5 @@
 import Container from '@components/container';
-import { IHero } from './interface';
+import { HeroProps } from './interface';
 import Button from '@components/button';
 import { redirectButtonProps } from '@components/button/mock-data';
 
@@ -7,7 +7,7 @@ export default function Hero({
   title,
   description,
   buttons: { buttonLeft, buttonRight },
-}: IHero) {
+}: HeroProps) {
   return (
     <section
       role="presentation"
@@ -31,7 +31,7 @@ export default function Hero({
               <Button.Redirect
                 {...redirectButtonProps}
                 colorScheme="bg-warning-text-black"
-                hoverColorScheme="bg-error-text-white"
+                hoverColorScheme="bg-danger-text-white"
                 label={buttonRight.label}
                 href={buttonRight.href}
                 isOpenNewTab={false}

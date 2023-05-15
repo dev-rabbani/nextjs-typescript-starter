@@ -1,8 +1,8 @@
-import { Dimension, IImage } from '@root/src/types';
+import { Dimension, ImageProps } from '@root/src/types';
 
-export interface IBlogCard {
+export interface BlogCardProps {
   slug: string;
-  image: IImage;
+  image: ImageProps;
   title: string;
 }
 

@@ -5,18 +5,18 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { RiPlaneFill, RiTrainFill } from 'react-icons/ri';
 import { IoIosRocket } from 'react-icons/io';
 
-interface IIconStoreProps {
+interface IconStoreProps {
   iconName: IconNames;
 }
 
 /**
  * @method IconStore
- * @param {iconName} IIconStoreProps
+ * @param {iconName} IconStoreProps
  * @returns {JSX.Element}
  * @description this function will receive iconName and return icon JSX.Element(svg)
  */
 
-const IconStore = ({ iconName }: IIconStoreProps) => {
+const IconStore = ({ iconName }: IconStoreProps) => {
   switch (iconName) {
     case 'Error Vector': {
       return <ErrorVector />;

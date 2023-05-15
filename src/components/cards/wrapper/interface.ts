@@ -1,4 +1,4 @@
-export interface ICardWrapper {
+export interface CardWrapperProps {
   cardShadow: CardShadow;
   hoverCardShadow?: CardShadow;
   cardBorderRadius: CardBorderRadius;

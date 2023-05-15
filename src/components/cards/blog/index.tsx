@@ -1,9 +1,9 @@
 import CardWrapper from '../wrapper';
-import { BLOG_IMAGE_DIMENSION, IBlogCard } from './interface';
+import { BLOG_IMAGE_DIMENSION, BlogCardProps } from './interface';
 import { CustomImage } from '@components/custom-image';
 import Link from 'next/link';
 
-export default function BlogCard({ slug, image, title }: IBlogCard) {
+export default function BlogCard({ slug, image, title }: BlogCardProps) {
   return (
     <CardWrapper cardBorderRadius="radius-one" cardShadow="shadow-one">
       <Link href={slug} passHref className="block">
@@ -21,7 +21,7 @@ export default function BlogCard({ slug, image, title }: IBlogCard) {
             />
           </div>
           <div className="flex flex-col space-y-3 p-5 pt-8">
-            <h3 className="flex-1 text-lg font-bold line-clamp-2">{title}</h3>
+            <h3 className="line-clamp-2 flex-1 text-lg font-bold">{title}</h3>
           </div>
         </div>
       </Link>
