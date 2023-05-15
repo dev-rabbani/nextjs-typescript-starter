@@ -16,7 +16,7 @@ exports[`renders hero correctly 1`] = `
         class="space-y-12"
       >
         <h2
-          class="2xl:text-5xl text-3xl text-white md:text-4xl"
+          class="text-3xl text-white md:text-3xl 2xl:text-4xl"
         >
           Welcome to Nextjs typescript starter, the ultimate solution for building modern web applications with Next.js!
         </h2>

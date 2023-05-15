@@ -16,7 +16,7 @@ export default function Hero({
       <Container>
         <div className="max-w-[1200px]">
           <div className="space-y-12">
-            <h2 className="2xl:text-5xl text-3xl text-white md:text-4xl">
+            <h2 className="text-3xl text-white md:text-3xl 2xl:text-4xl">
               {title}
             </h2>
             <p className="text-xl text-white">{description}</p>
