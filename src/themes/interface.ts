@@ -2,9 +2,9 @@
  * WARNING: If you make changes to the keys array/BREAKPOINTS object then,
  * please update the 'screens' in tailwind.config.
  */
-const keys = ['sm', 'md', 'lg', 'xl', '2xl'] as const;
+const screens = ['sm', 'md', 'lg', 'xl', '2xl'] as const;
 
-export type Breakpoint = (typeof keys)[number];
+export type Breakpoint = (typeof screens)[number];
 
 export type Breakpoints = {
   [key in Breakpoint]: number;
