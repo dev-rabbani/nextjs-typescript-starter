@@ -25,18 +25,12 @@
 
   // shadow - hover state
   &.hover-shadow-one {
-    &:hover {
-      @apply shadow-1;
-    }
+    @apply hover:shadow-1;
   }
   &.hover-shadow-two {
-    &:hover {
-      @apply shadow-2;
-    }
+    @apply hover:shadow-2;
   }
   &.hover-shadow-none {
-    &:hover {
-      box-shadow: none;
-    }
+    @apply hover:shadow-none;
   }
 }
